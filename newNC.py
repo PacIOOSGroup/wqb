@@ -67,7 +67,7 @@ def main():
     oxygenVar = dataset.createVariable("oxygen", "f4", ("obs","timeseries",), fill_value=xmiss)
     chlorophyllVar = dataset.createVariable("chlorophyll", "f4", ("obs","timeseries",), fill_value=xmiss)
     turbidityVar = dataset.createVariable("turbidity", "f4", ("obs","timeseries",), fill_value=xmiss)
-    phVar = dataset.createVariable("ph", "f4", ("obs","timeseries",), fill_value=xmiss)
+    conductivityVar = dataset.createVariable("conductivity", "f4", ("obs","timeseries",), fill_value=xmiss)
 
     temperatureVar_raw = dataset.createVariable("temperature_raw", "f4", ("obs","timeseries",), fill_value=xmiss)
     salinityVar_raw = dataset.createVariable("salinity_raw", "f4", ("obs","timeseries",), fill_value=xmiss)
@@ -75,7 +75,7 @@ def main():
     oxygenVar_raw = dataset.createVariable("oxygen_raw", "f4", ("obs","timeseries",), fill_value=xmiss)
     chlorophyllVar_raw = dataset.createVariable("chlorophyll_raw", "f4", ("obs","timeseries",), fill_value=xmiss)
     turbidityVar_raw = dataset.createVariable("turbidity_raw", "f4", ("obs","timeseries",), fill_value=xmiss)
-    phVar_raw = dataset.createVariable("ph_raw", "f4", ("obs","timeseries",), fill_value=xmiss)
+    conductivityVar_raw = dataset.createVariable("conductivity_raw", "f4", ("obs","timeseries",), fill_value=xmiss)
 
     temperatureVar_dm_qd = dataset.createVariable("temperature_dm_qd", "u4", ("obs","timeseries",), fill_value=xmiss)
     salinityVar_dm_qd = dataset.createVariable("salinity_dm_qd", "u4", ("obs","timeseries",), fill_value=xmiss)
@@ -83,7 +83,7 @@ def main():
     oxygenVar_dm_qd = dataset.createVariable("oxygen_dm_qd", "u4", ("obs","timeseries",), fill_value=xmiss)
     chlorophyllVar_dm_qd = dataset.createVariable("chlorophyll_dm_qd", "u4", ("obs","timeseries",), fill_value=xmiss)
     turbidityVar_dm_qd = dataset.createVariable("turbidity_dm_qd", "u4", ("obs","timeseries",), fill_value=xmiss)
-    phVar_dm_qd = dataset.createVariable("ph_dm_qd", "u4", ("obs","timeseries",), fill_value=xmiss)
+    conductivityVar_dm_qd = dataset.createVariable("conductivity_dm_qd", "u4", ("obs","timeseries",), fill_value=xmiss)
 
     temperatureVar_qc_gap = dataset.createVariable("temperature_qc_gap", "u4", ("obs","timeseries",), fill_value=xmiss)
     salinityVar_qc_gap = dataset.createVariable("salinity_qc_gap", "u4", ("obs","timeseries",), fill_value=xmiss)
@@ -91,7 +91,7 @@ def main():
     oxygenVar_qc_gap = dataset.createVariable("oxygen_qc_gap", "u4", ("obs","timeseries",), fill_value=xmiss)
     chlorophyllVar_qc_gap = dataset.createVariable("chlorophyll_qc_gap", "u4", ("obs","timeseries",), fill_value=xmiss)
     turbidityVar_qc_gap = dataset.createVariable("turbidity_qc_gap", "u4", ("obs","timeseries",), fill_value=xmiss)
-    phVar_qc_gap = dataset.createVariable("ph_qc_gap", "u4", ("obs","timeseries",), fill_value=xmiss)
+    conductivityVar_qc_gap = dataset.createVariable("conductivity_qc_gap", "u4", ("obs","timeseries",), fill_value=xmiss)
 
     temperatureVar_qc_syn = dataset.createVariable("temperature_qc_syn", "u4", ("obs","timeseries",), fill_value=xmiss)
     salinityVar_qc_syn = dataset.createVariable("salinity_qc_syn", "u4", ("obs","timeseries",), fill_value=xmiss)
@@ -99,7 +99,7 @@ def main():
     oxygenVar_qc_syn = dataset.createVariable("oxygen_qc_syn", "u4", ("obs","timeseries",), fill_value=xmiss)
     chlorophyllVar_qc_syn = dataset.createVariable("chlorophyll_qc_syn", "u4", ("obs","timeseries",), fill_value=xmiss)
     turbidityVar_qc_syn = dataset.createVariable("turbidity_qc_syn", "u4", ("obs","timeseries",), fill_value=xmiss)
-    phVar_qc_syn = dataset.createVariable("ph_qc_syn", "u4", ("obs","timeseries",), fill_value=xmiss)
+    conductivityVar_qc_syn = dataset.createVariable("conductivity_qc_syn", "u4", ("obs","timeseries",), fill_value=xmiss)
     
     temperatureVar_qc_loc = dataset.createVariable("temperature_qc_loc", "u4", ("obs","timeseries",), fill_value=xmiss)
     salinityVar_qc_loc = dataset.createVariable("salinity_qc_loc", "u4", ("obs","timeseries",), fill_value=xmiss)
@@ -107,7 +107,7 @@ def main():
     oxygenVar_qc_loc = dataset.createVariable("oxygen_qc_loc", "u4", ("obs","timeseries",), fill_value=xmiss)
     chlorophyllVar_qc_loc = dataset.createVariable("chlorophyll_qc_loc", "u4", ("obs","timeseries",), fill_value=xmiss)
     turbidityVar_qc_loc = dataset.createVariable("turbidity_qc_loc", "u4", ("obs","timeseries",), fill_value=xmiss)
-    phVar_qc_loc = dataset.createVariable("ph_qc_loc", "u4", ("obs","timeseries",), fill_value=xmiss)
+    conductivityVar_qc_loc = dataset.createVariable("conductivity_qc_loc", "u4", ("obs","timeseries",), fill_value=xmiss)
 
     temperatureVar_qc_rng = dataset.createVariable("temperature_qc_rng", "u4", ("obs","timeseries",), fill_value=xmiss)
     salinityVar_qc_rng = dataset.createVariable("salinity_qc_rng", "u4", ("obs","timeseries",), fill_value=xmiss)
@@ -115,7 +115,7 @@ def main():
     oxygenVar_qc_rng = dataset.createVariable("oxygen_qc_rng", "u4", ("obs","timeseries",), fill_value=xmiss)
     chlorophyllVar_qc_rng = dataset.createVariable("chlorophyll_qc_rng", "u4", ("obs","timeseries",), fill_value=xmiss)
     turbidityVar_qc_rng = dataset.createVariable("turbidity_qc_rng", "u4", ("obs","timeseries",), fill_value=xmiss)
-    phVar_qc_rng = dataset.createVariable("ph_qc_rng", "u4", ("obs","timeseries",), fill_value=xmiss)
+    conductivityVar_qc_rng = dataset.createVariable("conductivity_qc_rng", "u4", ("obs","timeseries",), fill_value=xmiss)
 
     temperatureVar_qc_clm = dataset.createVariable("temperature_qc_clm", "u4", ("obs","timeseries",), fill_value=xmiss)
     salinityVar_qc_clm = dataset.createVariable("salinity_qc_clm", "u4", ("obs","timeseries",), fill_value=xmiss)
@@ -123,7 +123,7 @@ def main():
     oxygenVar_qc_clm = dataset.createVariable("oxygen_qc_clm", "u4", ("obs","timeseries",), fill_value=xmiss)
     chlorophyllVar_qc_clm = dataset.createVariable("chlorophyll_qc_clm", "u4", ("obs","timeseries",), fill_value=xmiss)
     turbidityVar_qc_clm = dataset.createVariable("turbidity_qc_clm", "u4", ("obs","timeseries",), fill_value=xmiss)
-    phVar_qc_clm = dataset.createVariable("ph_qc_clm", "u4", ("obs","timeseries",), fill_value=xmiss)
+    conductivityVar_qc_clm = dataset.createVariable("conductivity_qc_clm", "u4", ("obs","timeseries",), fill_value=xmiss)
     
     temperatureVar_qc_spk = dataset.createVariable("temperature_qc_spk", "u4", ("obs","timeseries",), fill_value=xmiss)
     salinityVar_qc_spk = dataset.createVariable("salinity_qc_spk", "u4", ("obs","timeseries",), fill_value=xmiss)
@@ -131,7 +131,7 @@ def main():
     oxygenVar_qc_spk = dataset.createVariable("oxygen_qc_spk", "u4", ("obs","timeseries",), fill_value=xmiss)
     chlorophyllVar_qc_spk = dataset.createVariable("chlorophyll_qc_spk", "u4", ("obs","timeseries",), fill_value=xmiss)
     turbidityVar_qc_spk = dataset.createVariable("turbidity_qc_spk", "u4", ("obs","timeseries",), fill_value=xmiss)
-    phVar_qc_spk = dataset.createVariable("ph_qc_spk", "u4", ("obs","timeseries",), fill_value=xmiss)
+    conductivityVar_qc_spk = dataset.createVariable("conductivity_qc_spk", "u4", ("obs","timeseries",), fill_value=xmiss)
     
     temperatureVar_qc_rtc = dataset.createVariable("temperature_qc_rtc", "u4", ("obs","timeseries",), fill_value=xmiss)
     salinityVar_qc_rtc = dataset.createVariable("salinity_qc_rtc", "u4", ("obs","timeseries",), fill_value=xmiss)
@@ -139,7 +139,7 @@ def main():
     oxygenVar_qc_rtc = dataset.createVariable("oxygen_qc_rtc", "u4", ("obs","timeseries",), fill_value=xmiss)
     chlorophyllVar_qc_rtc = dataset.createVariable("chlorophyll_qc_rtc", "u4", ("obs","timeseries",), fill_value=xmiss)
     turbidityVar_qc_rtc = dataset.createVariable("turbidity_qc_rtc", "u4", ("obs","timeseries",), fill_value=xmiss)
-    phVar_qc_rtc = dataset.createVariable("ph_qc_rtc", "u4", ("obs","timeseries",), fill_value=xmiss)
+    conductivityVar_qc_rtc = dataset.createVariable("conductivity_qc_rtc", "u4", ("obs","timeseries",), fill_value=xmiss)
     
     temperatureVar_qc_flt = dataset.createVariable("temperature_qc_flt", "u4", ("obs","timeseries",), fill_value=xmiss)
     salinityVar_qc_flt = dataset.createVariable("salinity_qc_flt", "u4", ("obs","timeseries",), fill_value=xmiss)
@@ -147,7 +147,7 @@ def main():
     oxygenVar_qc_flt = dataset.createVariable("oxygen_qc_flt", "u4", ("obs","timeseries",), fill_value=xmiss)
     chlorophyllVar_qc_flt = dataset.createVariable("chlorophyll_qc_flt", "u4", ("obs","timeseries",), fill_value=xmiss)
     turbidityVar_qc_flt = dataset.createVariable("turbidity_qc_flt", "u4", ("obs","timeseries",), fill_value=xmiss)
-    phVar_qc_flt = dataset.createVariable("ph_qc_flt", "u4", ("obs","timeseries",), fill_value=xmiss)
+    conductivityVar_qc_flt = dataset.createVariable("conductivity_qc_flt", "u4", ("obs","timeseries",), fill_value=xmiss)
 
     temperatureVar_qc_mvr = dataset.createVariable("temperature_qc_mvr", "u4", ("obs","timeseries",), fill_value=xmiss)
     salinityVar_qc_mvr = dataset.createVariable("salinity_qc_mvr", "u4", ("obs","timeseries",), fill_value=xmiss)
@@ -155,7 +155,7 @@ def main():
     oxygenVar_qc_mvr = dataset.createVariable("oxygen_qc_mvr", "u4", ("obs","timeseries",), fill_value=xmiss)
     chlorophyllVar_qc_mvr = dataset.createVariable("chlorophyll_qc_mvr", "u4", ("obs","timeseries",), fill_value=xmiss)
     turbidityVar_qc_mvr = dataset.createVariable("turbidity_qc_mvr", "u4", ("obs","timeseries",), fill_value=xmiss)
-    phVar_qc_mvr = dataset.createVariable("ph_qc_mvr", "u4", ("obs","timeseries",), fill_value=xmiss)
+    conductivityVar_qc_mvr = dataset.createVariable("conductivity_qc_mvr", "u4", ("obs","timeseries",), fill_value=xmiss)
     
     temperatureVar_qc_atn = dataset.createVariable("temperature_qc_atn", "u4", ("obs","timeseries",), fill_value=xmiss)
     salinityVar_qc_atn = dataset.createVariable("salinity_qc_atn", "u4", ("obs","timeseries",), fill_value=xmiss)
@@ -163,7 +163,7 @@ def main():
     oxygenVar_qc_atn = dataset.createVariable("oxygen_qc_atn", "u4", ("obs","timeseries",), fill_value=xmiss)
     chlorophyllVar_qc_atn = dataset.createVariable("chlorophyll_qc_atn", "u4", ("obs","timeseries",), fill_value=xmiss)
     turbidityVar_qc_atn = dataset.createVariable("turbidity_qc_atn", "u4", ("obs","timeseries",), fill_value=xmiss)
-    phVar_qc_atn = dataset.createVariable("ph_qc_atn", "u4", ("obs","timeseries",), fill_value=xmiss)
+    conductivityVar_qc_atn = dataset.createVariable("conductivity_qc_atn", "u4", ("obs","timeseries",), fill_value=xmiss)
 
     temperatureVar_qc_nbr = dataset.createVariable("temperature_qc_nbr", "u4", ("obs","timeseries",), fill_value=xmiss)
     salinityVar_qc_nbr = dataset.createVariable("salinity_qc_nbr", "u4", ("obs","timeseries",), fill_value=xmiss)
@@ -171,7 +171,7 @@ def main():
     oxygenVar_qc_nbr = dataset.createVariable("oxygen_qc_nbr", "u4", ("obs","timeseries",), fill_value=xmiss)
     chlorophyllVar_qc_nbr = dataset.createVariable("chlorophyll_qc_nbr", "u4", ("obs","timeseries",), fill_value=xmiss)
     turbidityVar_qc_nbr = dataset.createVariable("turbidity_qc_nbr", "u4", ("obs","timeseries",), fill_value=xmiss)
-    phVar_qc_nbr = dataset.createVariable("ph_qc_nbr", "u4", ("obs","timeseries",), fill_value=xmiss)
+    conductivityVar_qc_nbr = dataset.createVariable("conductivity_qc_nbr", "u4", ("obs","timeseries",), fill_value=xmiss)
 
     temperatureVar_qc_crv = dataset.createVariable("temperature_qc_crv", "u4", ("obs","timeseries",), fill_value=xmiss)
     salinityVar_qc_crv = dataset.createVariable("salinity_qc_crv", "u4", ("obs","timeseries",), fill_value=xmiss)
@@ -179,7 +179,7 @@ def main():
     oxygenVar_qc_crv = dataset.createVariable("oxygen_qc_crv", "u4", ("obs","timeseries",), fill_value=xmiss)
     chlorophyllVar_qc_crv = dataset.createVariable("chlorophyll_qc_crv", "u4", ("obs","timeseries",), fill_value=xmiss)
     turbidityVar_qc_crv = dataset.createVariable("turbidity_qc_crv", "u4", ("obs","timeseries",), fill_value=xmiss)
-    phVar_qc_crv = dataset.createVariable("ph_qc_crv", "u4", ("obs","timeseries",), fill_value=xmiss)
+    conductivityVar_qc_crv = dataset.createVariable("conductivity_qc_crv", "u4", ("obs","timeseries",), fill_value=xmiss)
 
     temperatureVar_qc_din = dataset.createVariable("temperature_qc_din", "u4", ("obs","timeseries",), fill_value=xmiss)
     salinityVar_qc_din = dataset.createVariable("salinity_qc_din", "u4", ("obs","timeseries",), fill_value=xmiss)
@@ -187,11 +187,20 @@ def main():
     oxygenVar_qc_din = dataset.createVariable("oxygen_qc_din", "u4", ("obs","timeseries",), fill_value=xmiss)
     chlorophyllVar_qc_din = dataset.createVariable("chlorophyll_qc_din", "u4", ("obs","timeseries",), fill_value=xmiss)
     turbidityVar_qc_din = dataset.createVariable("turbidity_qc_din", "u4", ("obs","timeseries",), fill_value=xmiss)
-    phVar_qc_din = dataset.createVariable("ph_qc_din", "u4", ("obs","timeseries",), fill_value=xmiss)
+    conductivityVar_qc_din = dataset.createVariable("conductivity_qc_din", "u4", ("obs","timeseries",), fill_value=xmiss)
 
     platformVar = dataset.createVariable("platform1", "u4")
     instrumentVar = dataset.createVariable("instrument1", "u4")
     crsVar = dataset.createVariable("crs", "u4")
+
+    tempCDF = []
+    salinityCDF = []
+    oxygenSatCDF = []
+    oxygenCDF = []
+    chlorophyllCDF = []
+    turbidityCDF = []
+    conductivityCDF = []
+
 
 
 
